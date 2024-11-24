@@ -15,7 +15,7 @@ states = ["Kolkata", "Meghalaya", "Goa", "Mizoram"]
 years = [2023, 2024]  # You can dynamically fetch years from your dataset
 
 # Thresholds for categorization (example values, replace with actual thresholds)
-DROUGHT_THRESHOLD = 500  # mm (example)
+DROUGHT_THRESHOLD = 74  # mm (example)
 FLOOD_THRESHOLD = 2000  # mm (example)
 
 # Title
