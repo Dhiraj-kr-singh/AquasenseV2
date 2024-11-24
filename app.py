@@ -23,23 +23,24 @@ st.markdown(
     """
     <style>
     /* Background with Smooth Animation */
-body {
-  background: linear-gradient(120deg, #ffffff, #f5f5f5, #e0e0e0);
-  animation: backgroundPulse 10s infinite alternate ease-in-out;
-}
+    body {
+      background: linear-gradient(120deg, #ffffff, #f5f5f5, #e0e0e0);
+      animation: backgroundPulse 10s infinite alternate ease-in-out;
+    }
 
-/* Keyframes for Smooth Gradient Animation */
-@keyframes backgroundPulse {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 50% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
+    /* Keyframes for Smooth Gradient Animation */
+    @keyframes backgroundPulse {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 50% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
     /* General Styling */
     .title {
         font-size: 2.5em;
