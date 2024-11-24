@@ -18,6 +18,21 @@ years = [2023, 2024]  # You can dynamically fetch years from your dataset
 DROUGHT_THRESHOLD = 74  # mm (example)
 FLOOD_THRESHOLD = 120  # mm (example)
 
+# Add HTML and CSS
+def add_custom_html_css():
+    # Load and embed HTML content
+    with open("intex.html", "r") as html_file:
+        custom_html = html_file.read()
+        st.markdown(custom_html, unsafe_allow_html=True)
+    
+    # Load and embed CSS content
+    with open("styles.css", "r") as css_file:
+        custom_css = css_file.read()
+        st.markdown(f"<style>{custom_css}</style>", unsafe_allow_html=True)
+
+# Inject custom HTML and CSS
+add_custom_html_css()
+
 # Title
 st.title("Flood & Drought Detection v1")
 
@@ -37,7 +52,7 @@ if st.button("Predict Rainfall"):
         input_data = pd.DataFrame([[encoded_state, int(year)]], columns=["State", "Year"])
         
         # Make the prediction
-        prediction = (model.predict(input_data)[0])*10
+        prediction = (model.predict(input_data)[0]) * 10
         
         # Determine rainfall category
         if prediction < DROUGHT_THRESHOLD:
