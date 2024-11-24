@@ -19,7 +19,7 @@ DROUGHT_THRESHOLD = 74  # mm (example)
 FLOOD_THRESHOLD = 2000  # mm (example)
 
 # Title
-st.title("Flood & Drought Detection")
+st.title("Flood & Drought Detection v1")
 
 # User input for selecting state
 state = st.selectbox("Select State", states)
