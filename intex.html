@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaSense</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">AquaSense</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#alerts">Alerts</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#forums">Community Forums</a></li>
+        <li><a href="#resources">Educational Resources</a></li>
+        <li><a href="#pro">AquaSense Pro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Track Water Levels, Predict Disasters, Conserve Resources</h1>
+    <p>Your ultimate platform for water management and climate resilience.</p>
+    <input type="text" id="search-input" placeholder="Enter ZIP code or city name">
+    <button id="search-button">Check Water Level</button>
+  </section>
+
+  <section class="dashboard">
+    <div class="real-time">
+      <h2>Real-Time Water Level</h2>
+      <div class="water-status">
+        <p id="water-level">Water Level: Normal</p>
+        <img id="map-img" src="assets/default-map.png" alt="Real-Time Water Level Map">
+      </div>
+    </div>
+    <div class="data-section">
+      <div id="historical-data">
+        <h2>Historical Data</h2>
+        <img 
+          id="historical-data-img" 
+          src="assets/default-historical.png" 
+          alt="Default Historical Data">
+      </div>
+      <div id="heat-maps">
+        <h2>Heat Maps</h2>
+        <img 
+          id="heat-maps-img" 
+          src="assets/default-heatmap.png" 
+          alt="Default Heat Map">
+      </div>
+    </div>
+  </section>
+
+  <section class="community">
+    <h2>Community Engagement</h2>
+    <div class="forums">
+      <p>Join discussions about innovative water conservation methods, climate impact on resources, and more.</p>
+      <button class="learn-more">Learn More</button>
+    </div>
+    <div class="actions">
+      <h3>Get Involved</h3>
+      <p>Join our efforts in promoting sustainable water practices by volunteering or sharing data with our partner organizations.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 AquaSense Pro. All Rights Reserved.</p>
+    <div class="footer-links">
+      <a href="#privacy">Privacy Policy</a> | 
+      <a href="#terms">Terms of Service</a> | 
+      <a href="#contact">Contact Us</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

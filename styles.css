@@ -1,0 +1,149 @@
+/* General Reset */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ccc;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background-color: #e3f2fd;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #007bff;
+}
+
+.hero p {
+  margin: 10px 0 20px;
+}
+
+.hero input, .hero button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.hero button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #0056b3;
+}
+
+/* Dashboard */
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.dashboard h2 {
+  text-align: center;
+  color: #007bff;
+}
+
+.data-section img, .real-time img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Community Section */
+.community {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.community h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.community .forums {
+  text-align: center;
+}
+
+.community .forums button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.community .forums button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+footer .footer-links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
