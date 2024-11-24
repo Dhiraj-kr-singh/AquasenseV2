@@ -16,7 +16,7 @@ years = [2023, 2024]  # You can dynamically fetch years from your dataset
 
 # Thresholds for categorization (example values, replace with actual thresholds)
 DROUGHT_THRESHOLD = 74  # mm (example)
-FLOOD_THRESHOLD = 2000  # mm (example)
+FLOOD_THRESHOLD = 120  # mm (example)
 
 # Title
 st.title("Flood & Drought Detection v1")
@@ -37,7 +37,7 @@ if st.button("Predict Rainfall"):
         input_data = pd.DataFrame([[encoded_state, int(year)]], columns=["State", "Year"])
         
         # Make the prediction
-        prediction = model.predict(input_data)[0]
+        prediction = (model.predict(input_data)[0])*10
         
         # Determine rainfall category
         if prediction < DROUGHT_THRESHOLD:
